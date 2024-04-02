@@ -1,0 +1,175 @@
+.testimonial-section {
+    position: relative;
+    padding-bottom: 181px;
+}
+
+.testimonial-section__title {
+    font-family: "Rubik";
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $main-title-color;
+}
+
+.testimonial-section__title-wrapper {
+    width: 450px;
+    margin-inline: auto;
+}
+
+.testimonial-section__desc {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: center;
+    color: $main-desc-color;
+}
+
+.testimonial-section__desc-wrapper {
+    width: 555px;
+    margin-inline: auto;
+}
+
+.testimonial-section__list {
+    @include flexBox(row, null, null, center, 50px);
+    @include listUnstyled;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.testimonial-section__item {
+    padding: 30px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.testimonial-section__item:nth-child(3) {
+    position: absolute;
+    left: calc(80% - 10px);
+}
+
+.testimonial-item__top {
+    @include flexBox(row, null, null, center, null);
+}
+
+.item-top__info-user {
+    font-family: "Rubik";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-block: 0;
+    text-align: center;
+    color: $main-title-color;
+}
+
+.item-top__info-nationality {
+    font-family: "Rubik";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-block: 0;
+    text-align: left;
+    color: $main-desc-color;
+}
+
+.item-top__info {
+    @include flexBox(column, null, null, flex-start, 5px);
+    margin-left: 20px;
+    margin-right: 78px;
+}
+
+.testimonial-section__item-desc {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+    color: $main-desc-color;
+}
+
+.testimonoial-section__item-desc-wrapper {
+    width: 340px;
+    height: 100px;
+}
+
+.item-top__rating {
+    @include flexBox(row, null, null, center, 10px);
+}
+
+.testimonial-section__controls {
+    @include flexBox(row, null, space-between, center, -10px);
+}
+
+.testimonial-section__control-buttons {
+    @include flexBox(row, null, null, center, null);
+}
+
+.testimonial-section__left-button {
+    background-image: url("/images/left.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: -15px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+}
+
+.testimonial-section__right-button {
+    border: none;
+    background-color: transparent;
+    margin-top: 28px;
+}
+
+.subscription-section {
+    position: absolute;
+    bottom: -125px;
+    width: 1140px;
+    background-color: #fff;
+}
+
+.subscription-section__inner {
+    @include flexBox(row, null, space-between, center, null);
+    padding: 58px 70px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.subscription-section__content {
+    width: 371px;
+}
+
+.subscription-section__title {
+    font-family: "Rubik";
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-block: 0;
+    text-align: left;
+    color: $main-title-color;
+}
+
+.subscription-section__desc {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: left;
+    color: $main-desc-color;
+}
+
+.subscription-section__link {
+    @include button(null, 16px, 700, 17.5px 65px, 15px, #fff);
+    border: none;
+    background-color: $main-button-color;
+    box-shadow: 0 20px 25px -5px rgba(231, 31, 31, 0.1), 0 8px 10px -6px rgba(223, 22, 22, 0.1);
+}

@@ -1,0 +1,33 @@
+.site-header {
+    padding-top: 45px;
+    padding-bottom: 86px;
+}
+
+.site-header__inner {
+    @include flexBox(row, null, space-between, center, null);
+}
+
+.navbar__list {
+    @include flexBox(row, null, null, center, 40px);
+    @include listUnstyled;
+}
+
+.navbar__item-link {
+    @include linkStyle(16px, 400, $main-desc-color);
+}
+
+.navbar__item:nth-child(2) {
+    margin-right: 90px;
+}
+
+.register-part__signIn {
+    @include linkStyle(16px, 500, $main-title-color);
+    margin-right: 30px;
+}
+
+.register-part__singUp-button {
+    @include button(null, 16px, 500, 13px 45px, 20px, $main-button-color);
+    border: 1px solid $main-button-color;
+    background-color: transparent;
+}
+

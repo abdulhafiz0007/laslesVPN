@@ -1,0 +1,72 @@
+.hero-section {
+    padding-bottom: 95px;
+}
+
+.hero-section__inner {
+    @include flexBox(row, null, space-between, center, null);
+}
+
+.hero-section__content {
+    width: 595px;
+}
+
+.hero-section__title {
+    font-family: "Rubik";
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    color: $main-title-color;
+}
+
+.hero-section__desc {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: left;
+    color: $main-desc-color;
+}
+
+.hero-section__link {
+    @include button(null, 16px, 700, 17px 78px, 20px, #fff);
+    background-color: $main-button-color;
+}
+
+.hero-section__list {
+    @include flexBox(row, null, space-between, center, null);
+    @include listUnstyled;
+    margin-top: 127px;
+    padding: 67.5px 91px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section__item {
+    @include flexBox(row, null, null, center, 36.5px);
+}
+
+.hero-section__item-content {
+    @include flexBox(column, null, null, flex-start, 5px);
+}
+
+.item-content__desc-number {
+    font-family: "Rubik";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-block: 0;
+    color: $main-title-color;
+}
+
+.item-content-desc {
+    font-family: "Rubik";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-block: 0;
+    color: $main-desc-color;
+}

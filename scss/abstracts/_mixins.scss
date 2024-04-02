@@ -1,0 +1,32 @@
+@mixin flexBox ($directionType, $wrap, $justifyType, $alignType, $gap) {
+    display: flex;
+    flex-direction: $directionType;
+    flex-wrap: $wrap;
+    justify-content: $justifyType;
+    align-items: $alignType;
+    gap: $gap;
+}
+
+@mixin button ($displaytype, $fontSize, $fontWeight, $padding, $borderRadius, $color) {
+    font-family: "Rubik";
+    font-weight: $fontWeight;
+    padding: $padding;
+    text-decoration-line: none;
+    border: none;
+    border-radius: $borderRadius;
+    color: $color;
+}
+
+@mixin linkStyle ($fontSize, $fontWeight, $color) {
+    font-family: "Rubik";
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    text-decoration-line: none;
+    color: $color;
+}
+
+@mixin listUnstyled {
+    margin-block: 0;
+    padding-left: 0;
+    list-style: none;
+}

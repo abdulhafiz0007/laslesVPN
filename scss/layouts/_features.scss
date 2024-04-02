@@ -1,0 +1,50 @@
+.features-section {
+    padding-bottom: 126px;
+}
+
+.features-section__inner {
+    @include flexBox(row, null, space-between, center, null);
+}
+
+.features-section__content {
+    width: 410px;
+}
+
+.features-section__title {
+    font-family: "Rubik";
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-block: 0;
+    text-align: left;
+    color: $main-title-color;
+}
+
+.features-section__desc {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-block: 20;
+    text-align: left;
+    color: $main-desc-color;
+}
+
+.features-section__list {
+    @include flexBox(column, null, null, flex-start, 15px);
+    @include listUnstyled;
+}
+
+.features-section__item {
+    @include flexBox(row, null, null, center, 10px);
+}
+
+.features-item__desc {
+    font-family: "Rubik";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-block: 0;
+    text-align: left;
+    color: $main-desc-color;
+}

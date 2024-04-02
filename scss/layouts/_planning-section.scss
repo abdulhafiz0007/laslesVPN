@@ -1,0 +1,104 @@
+.planning-section {
+    padding-bottom: 150px;
+}
+
+.planning-section__title {
+    font-family: "Rubik";
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-block: 0;
+    color: $main-title-color;
+}
+
+.planning-section__desc {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-block: 0;
+    text-align: center;
+    color: $main-desc-color;
+}
+
+.planning-section__top-wrapper {
+    @include flexBox(column, null, center, center, 20px);
+    width: 555px;
+    margin-inline: auto;
+}
+
+.planning-section__list {
+    @include flexBox(row, null, space-between, center, null);
+    @include listUnstyled;
+    margin-top: 60px;
+}
+
+.planning-section__item {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-inline: 76px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.planning-section__list-content {
+    @include flexBox(column, null, null, center, null);
+}
+
+.planning-item__title {
+    font-family: "Rubik";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    color: $main-title-color;
+}
+
+.planning-item__list {
+    @include flexBox(column, null, null, flex-start, 10px);
+    @include listUnstyled;
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+
+.planning-item__item {
+    @include flexBox(row, null, null, center, 20px);
+}
+
+.planning-item__item-desc {
+    font-family: "Rubik";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-block: 0;
+    text-align: left;
+    color: $main-desc-color;
+}
+
+.planning-section__list-order {
+    @include flexBox(column, null, null, center, 20px);
+}
+
+.list-order__desc {
+    font-family: Rubik;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-block: 0;
+    text-align: center;
+    color: $main-title-color;
+}
+
+.list-order__button {
+    @include button(null, 16px, 700, 13px 63px, 25px, $main-button-color);
+    border: 2px solid $main-button-color;
+    background-color: transparent;
+}
+
+.order-span {
+    font-weight: 500;
+    color: $main-desc-color;
+}
